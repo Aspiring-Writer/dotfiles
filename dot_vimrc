@@ -1,9 +1,5 @@
-" Inspired by:
-"  ____ _____ 
-" |  _ \_   _|  Derek Taylor (DistroTube)
-" | | | || |    http://www.youtube.com/c/DistroTube
-" | |_| || |    http://www.gitlab.com/dwt1/
-" |____/ |_|
+" 
+" Inspired by Derek Taylor's (DistroTube) .vimrc file.
 "        
 " A customized .vimrc for vim (https://www.vim.org/)     
 
@@ -187,3 +183,4 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 
+autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
