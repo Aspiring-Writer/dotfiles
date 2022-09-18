@@ -1,0 +1,110 @@
+rm -rfv dir # Deletes all files in the directory, and the directory itself
+
+sudo nano /etc/apt/preferences.d/apt-listbugs # Delete the Package, Pin, Pin-Priority, and Explanation lines.
+
+# Python
+
+python3 -m venv virt
+source virt/bin/activate
+pip install -r requirements.txt
+export FLASK_ENV=development
+export FLASK_APP=app.py
+flask run
+
+deactivate
+
+# Vim
+
+:w      # Write
+:q!     # Discards changes
+
+x       # Delete character under curser
+
+## Operators
+
+The format for a change command is:
+               operator   [number]   motion
+     where:
+       operator - is what to do, such as  d  for delete
+       [number] - is an optional count to repeat the motion
+       motion   - moves over the text to operate on, such as  w (word),
+                  $ (to the end of line), etc.
+
+d       # Delete (operator)
+  dw    # Delete word, EXCLUDING its 1st character
+  de    # Delete word, INCLUDING its 1st character
+  d$    # Delete from cursor to end of line
+  dd    # Delete whole line
+
+u       # Undo
+U       # Fix whole line
+CTRL-R  # Undo the undos
+
+0       # Move to the start of line
+
+p       # Put dd line under cursor
+
+rx      # Replace character under cursor with x
+R       # Replace over characters
+
+c       # Change
+  ce    # Change to end of word (inc. whitespace)
+  cw    # Change word (doesn't inc. whitespace)
+  cc OR c$  # Change entire line, insert
+
+CTRL-G  # Show location and file status
+G       # Move to end of file
+gg      # Move to start of file
+<NUM>G  # Move to line <NUM>
+
+/       # Search
+  n     # Search same phrase again
+  N     # Search same phrase again in opposite direction
+
+?       # Search backwards
+CTRL-O  # Go back
+CTRL-I  # Go forward
+
+%       # Find closing ),], or }
+
+:s/old/new   # Substitute first occurrence of 'new' for 'old', in current line
+:s/old/new/g # Substitute all occurrences of 'new' for 'old', in current line
+:<NUM>,<NUM>s/old/new/g    # Substitue from line <NUM> to <NUM>
+:%s/old/new/g      to change every occurrence in the whole file.
+:%s/old/new/gc     to find every occurrence in the whole file, with a prompt whether to substitute or not.
+
+:!      # To type an external command
+  :!ls
+  :!rm FILENAME
+
+v       # Visual selection
+
+:r FILENAME  # Retrieve the contents of a file and output it
+               This also works with external commands
+               
+o      # Open a line under cursor
+O      # Open a line above cursor
+
+e      # Move to end of word
+
+A       # Append to the end
+a       # Append text after cursor
+
+y       # Yank (copy)
+p       # Paste
+
+ic      # Ignore case (:set ic)
+hls     # hlsearch
+is      # incsearch
+noic    # No ignore case
+\c      # Ignore case for just one search (/word\c)
+
+CTRL-D  # Search for commands
+<TAB>   # Complete command
+
+## Spell checker
+
+]s [s   # Move through errors
+z=      # Open suggestions
+zg      # Add word to dictionary
+zw      # Mark word as incorrect
