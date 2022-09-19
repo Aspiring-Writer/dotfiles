@@ -155,11 +155,11 @@ config.bind('I', 'hint images download')
 c.tabs.show = 'multiple'
 
 # Search engines
-c.url.searchengines = {'DEFAULT': 'https://startpage.com/?q={}',
+c.url.searchengines = {'DEFAULT': 'https://www.startpage.com/sp/search?query={}',
                        'arch': 'https://wiki.archlinux.org/?search={}',
                        'wiki': 'https://wikiless.org/wiki/{}',
                        'odysee': 'https://odysee.com/$/search?q={}'}
 
 # Startpages
-c.url.start_pages = ['https://aspiring-writer.github.io']
+c.url.start_pages = ['file:///home/bravishka/.config/qutebrowser/startpage/index.html']
 
