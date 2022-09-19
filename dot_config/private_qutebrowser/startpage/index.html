@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Startpage</title>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/hack-subset.css">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script defer src="js/main.js"></script>
+  <script defer src="js/quote.js"></script>
+  <script defer src="js/weather.js"></script>
+</head>
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+		<h1>Hey Bravishka</h1>
+		<div class="date">Unable to get date</div>
+  	<div class="greeting">Unable to get greeting</div>
+  	
+  	<form role="search" id="form">
+      <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search">
+      <button>
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
+    </form>
+  	<div class="weather">
+  		<a
+  			class="weatherwidget-io"
+  			href="https://forecast7.com/en/40d73n73d79/queens/?unit=us"
+  			data-label_1="QUEENS"
+  			data-label_2="WEATHER"
+  			data-theme="dark"
+  			data-basecolor="#11151C"
+  			data-accent="#11151C"
+  			data-textcolor="#D66853"
+  			data-highcolor="#D66853"
+  			data-lowcolor="#7D4E57"
+  		>QUEENS WEATHER</a>
+  	</div>
+  	<div class="qotd">
+  		<script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
+			<small><i><a href="https://www.brainyquote.com/quote_of_the_day" target="_blank" rel="nofollow">more Quotes</a></i></small>
+  	</div>
+  	
+	  <div class="cards">
+	    <div class="card">
+	    	<h2>media</h2>
+	    	<a href="https://open.spotify.com">Spotify</a>
+	    	<a href="https://youtube.com">Youtube</a>
+	    </div>
+	    <div class="card">
+	    	<h2>work</h2>
+	    	<a href="https://github.com">Github</a>
+	    	<a href="https://www.heroku.com/">Heroku</a>
+	    	<a href="https://localhost:8000">localhost</a>
+	    </div>
+	    <div class="card">
+	    	<h2>social</h2>
+	    	<a href="https://www.reddit.com">Reddit</a>
+	    </div>
+	    <div class="card">
+	    	<h2>others</h2>
+	    </div>
+	  </div>
+	</div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
